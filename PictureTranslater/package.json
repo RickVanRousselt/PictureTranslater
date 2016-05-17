@@ -1,0 +1,13 @@
+{
+  "name": "picture-translater",
+  "version": "0.0.0",
+  "description": "PictureTranslater",
+  "main": "app.js",
+  "author": {
+    "name": "Rick",
+    "email": ""
+  },
+  "dependencies": {
+    "node-rest-client": "^1.8.0"
+  }
+}

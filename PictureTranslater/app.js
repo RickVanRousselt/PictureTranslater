@@ -3,9 +3,9 @@ var client = new Client();
 
 var azure = require('azure-storage');
 
-var queueSvc = azure.createQueueService('twitstream', azure_key);
+var queueSvc = azure.createQueueService('twitstream', process.env.azure_key);
 
-var tableSvc = azure.createTableService('twitstream', azure_key);
+var tableSvc = azure.createTableService('twitstream', process.env.azure_key);
 
 
 function main() {

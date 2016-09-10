@@ -8,6 +8,7 @@
     "email": ""
   },
   "dependencies": {
+    "azure-storage": "^0.10.0",
     "node-rest-client": "^1.8.0"
   }
 }

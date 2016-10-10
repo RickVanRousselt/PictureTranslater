@@ -3,9 +3,10 @@ var client = new Client();
 
 var azure = require('azure-storage');
 
-var queueSvc = azure.createQueueService('twitstream', process.env.azure_key);
+var queueSvc = azure.createQueueService(process.env.table_name, process.env.azure_key);
 
-var tableSvc = azure.createTableService('twitstream', process.env.azure_key);
+var tableSvc = azure.createTableService(process.env.table_name, process.env.azure_key);
+var subscriptionKey = process.env.subscription;
 
 
 function main() {
@@ -23,7 +24,7 @@ function main() {
 						// set content-type header and data as json in args parameter  
 						var args = {
 							data: { "url": imageUrl },
-							headers: { "Content-Type": "application/json", "Host": "api.projectoxford.ai", "Ocp-Apim-Subscription-Key": "839724ebe25a446481a63fd1f0674f4c" },
+							headers: { "Content-Type": "application/json", "Host": "api.projectoxford.ai", "Ocp-Apim-Subscription-Key": subscriptionKey }
 						};
 						
 						client.post("https://api.projectoxford.ai/vision/v1.0/analyze?visualFeatures=Description", args, function (data, response) {

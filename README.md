@@ -14,7 +14,7 @@ This repo is created to run inside a [docker container](https://hub.docker.com/r
 
 You will need a subscription for the Microsoft Cognitive Services API. This can be obtained for free [here](https://www.microsoft.com/cognitive-services/en-us/sign-up)
 
-To run this inside ACS the following JSON can be used inside Marathon to run the container.
+To run this inside ACS the following JSON can be used inside Marathon to run the container. 
 
 ```javascript
 {

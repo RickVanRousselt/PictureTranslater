@@ -1,7 +1,7 @@
 # PictureTranslater
 
 This is part of a bigger application. Check out [TwitStreamReader](../../../../TwitStreamReader) and [DataExtracter](../../../../DataExtracter)
-
+   
 This node JS code in a docker container process items in an Azure Queue. From the Queue it knows what item to get from an Azure Storage Table. The item returned is a picture URL from a twitter profile. It will then call the [Microsoft Cognitive Services](https://www.microsoft.com/cognitive-services/en-us/apis) to get a description from that picture. The returned result will then be placed back into the Azure Storage Table.
 
 The following environment variables are required to have this run correctly.

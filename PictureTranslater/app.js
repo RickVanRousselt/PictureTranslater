@@ -27,7 +27,7 @@ function main() {
 							headers: { "Content-Type": "application/json", "Host": "api.projectoxford.ai", "Ocp-Apim-Subscription-Key": subscriptionKey }
 						};
 						
-						client.post("https://api.projectoxford.ai/vision/v1.0/analyze?visualFeatures=Description", args, function (data, response) {
+						client.post("https://southcentralus.api.cognitive.microsoft.com/vision/v1.0/analyze?visualFeatures=Description", args, function (data, response) {
 							
 							console.log(data);
 							var entGen = azure.TableUtilities.entityGenerator;

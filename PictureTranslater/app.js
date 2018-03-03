@@ -24,7 +24,7 @@ function main() {
 						// set content-type header and data as json in args parameter  
 						var args = {
 							data: { "url": imageUrl },
-							headers: { "Content-Type": "application/json", "Host": "api.projectoxford.ai", "Ocp-Apim-Subscription-Key": subscriptionKey }
+							headers: { "Content-Type": "application/json", "Ocp-Apim-Subscription-Key": subscriptionKey }
 						};
 						
 						client.post("https://southcentralus.api.cognitive.microsoft.com/vision/v1.0/analyze?visualFeatures=Description", args, function (data, response) {

@@ -1,6 +1,6 @@
 ﻿var Client = require('node-rest-client').Client;
 var client = new Client();
-
+ 
 var azure = require('azure-storage');
 
 var queueSvc = azure.createQueueService(process.env.table_name, process.env.azure_key);

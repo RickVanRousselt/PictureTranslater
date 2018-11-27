@@ -3,6 +3,7 @@ var client = new Client();
  
 var azure = require('azure-storage');
 
+
 var queueSvc = azure.createQueueService(process.env.table_name, process.env.azure_key);
 
 var tableSvc = azure.createTableService(process.env.table_name, process.env.azure_key);

@@ -7,7 +7,7 @@ var queueSvc = azure.createQueueService(process.env.table_name, process.env.azur
 
 var tableSvc = azure.createTableService(process.env.table_name, process.env.azure_key);
 var subscriptionKey = process.env.subscription;
- 
+  
 
 function main() {
 	queueSvc.getMessages('processedstreamids',
